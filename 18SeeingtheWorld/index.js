@@ -1,0 +1,25 @@
+let places = ['Bahawalpur', 'Capadokia', 'Ankara', 'Doha', 'alepo']
+function getPlacesCopy() {
+  return [...places]
+}
+console.log(places)
+console.log('\n')
+console.log('SORT:')
+console.log('sorted: ', getPlacesCopy().sort((a,b)=>a.localeCompare(b)))
+console.log('original: ',places)
+console.log('\n')
+console.log('REVERSE SORT:')
+console.log('reverse sorted: ', getPlacesCopy().sort((a,b)=>b.localeCompare(a)))
+console.log('original: ',places)
+console.log('\n')
+console.log('REVERSE ORDER:')
+console.log('reversed: ', getPlacesCopy().reverse())
+console.log('original: ',places)
+console.log('\n')
+console.log('INPLACE SORT:')
+console.log('sorted: ', places.sort((a,b)=>a.localeCompare(b)))
+console.log('original: ',places)
+console.log('\n')
+console.log('INPLACE REVERSE SORT:')
+console.log('sorted: ', places.sort((a,b)=>b.localeCompare(a)))
+console.log('original: ',places)
